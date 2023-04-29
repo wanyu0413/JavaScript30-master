@@ -246,8 +246,10 @@
           // half way through the image
           const slideInAt =
             window.scrollY + window.innerHeight - sliderImage.height / 2;
+          console.log(sliderImage.height);
           // bottom of the image
           const imageBottom = sliderImage.offsetTop + sliderImage.height;
+          // console.log(imageBottom);
           const isHalfshown = slideInAt > sliderImage.offsetTop;
           const inNotScrolledPast = window.scrollY < imageBottom;
           if (isHalfshown && inNotScrolledPast) {
